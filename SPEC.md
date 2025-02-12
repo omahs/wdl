@@ -730,13 +730,13 @@ In multi-line strings, leading *whitespace* is removed according to the followin
   
   ```json
   {
-    "multiline_strings2.hw0": "hello  world"
-    "multiline_strings2.hw1": "hello  world"
-    "multiline_strings2.hw2": "hello  world"
-    "multiline_strings2.hw3": "hello  world"
-    "multiline_strings2.hw4": "hello  world"
-    "multiline_strings2.hw5": "hello  world"
-    "multiline_strings2.hw6": "hello  world"
+    "multiline_strings2.hw0": "hello  world",
+    "multiline_strings2.hw1": "hello  world",
+    "multiline_strings2.hw2": "hello  world",
+    "multiline_strings2.hw3": "hello  world",
+    "multiline_strings2.hw4": "hello  world",
+    "multiline_strings2.hw5": "hello  world",
+    "multiline_strings2.hw6": "hello  world",
     "multiline_strings2.not_equivalent": "hello \\\n  world"
   }
   ```
@@ -799,9 +799,9 @@ Common leading whitespace is also removed from blank lines that contain whitespa
   
   ```json
   {
-    "multiline_strings3.multi_line_A": "\nthis is a\n\n  multi-line string\n"
-    "multiline_strings3.multi_line_B": "\nthis is a\n\n  multi-line string\n"
-    "multiline_strings3.multi_line_C": "\nthis is a\n\n  multi-line string\n"
+    "multiline_strings3.multi_line_A": "\nthis is a\n\n  multi-line string\n",
+    "multiline_strings3.multi_line_B": "\nthis is a\n\n  multi-line string\n",
+    "multiline_strings3.multi_line_C": "\nthis is a\n\n  multi-line string\n",
     "multiline_strings3.multi_line_D": "\nthis is a\n\n  multi-line string\n"
   }
   ```
@@ -4017,6 +4017,7 @@ The environment variable should be evaluated by the engine prior to injecting it
 
 <details>
 <summary>
+Example: environment_variable_should_echo.wdl
 
 ```wdl
 version 1.2
@@ -4045,6 +4046,7 @@ workflow environment_variable_should_echo {
   output {
     String out = test.out
   }
+}
 ```
 </summary>
 <p>
@@ -8855,7 +8857,7 @@ Example output:
   "write_tsv.structs_default": ["first", "one", "un"], 
   "write_tsv.structs_no_header": ["two", "deux"], 
   "write_tsv.structs_header": ["second", "two", "deux"], 
-  "write_tsv.structs_user_header": ["no3", "three", "trois"], 
+  "write_tsv.structs_user_header": ["no3", "three", "trois"]
 
 }
 ```
@@ -10949,7 +10951,7 @@ For example, if the first argument is a `Map[String, Map[String, Int]]` and the 
     "test_contains_key.i1": 1,
     "test_contains_key.i2": null,
     "test_contains_key.phone1": "123-456-7890",
-    "test_contains_key.phone2": null,
+    "test_contains_key.phone2": null
   }
   ``` 
   </p>
@@ -11220,7 +11222,7 @@ Example output:
   "test_length.ylen": 3,
   "test_length.zlen": 0,
   "test_length.mlen": 2,
-  "test_length.slen": 5,
+  "test_length.slen": 5
 }
 ```
 </p>
