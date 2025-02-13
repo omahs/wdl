@@ -14,7 +14,9 @@ Last, the language is driven and developed by a community of distributed volunte
 there is no single execution engine, and anyone can build tooling to contribute to the ecosystem.
 Today, [several engines and platforms] exist and cover most execution environments (all major HPCs, all major clouds, local execution).
 
-## Join the community
+
+The WDL *specification* has a three-number version (e.g., `1.2.1`).
+The specification version tracks the language version, but there may also be patch releases (indicated by a change to the patch, or third, version number) that include fixes for typos, additional examples, or non-breaking clarifications of ambiguous language.
 
 If you're new to WDL, welcome 👋. We _highly_ recommend that you read the [getting started documentation] to learn how to write tasks and workflows.
 
