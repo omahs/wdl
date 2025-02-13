@@ -17,6 +17,11 @@ Keep the changelog pleasant to read in the text editor:
 + Properly indent blocks.
 -->
 
+version 1.2.1
+---------------------------
+
+* Include fixes to examples that don't comile in `wdl-tests`
+
 version 1.2.0
 ---------------------------
 
